@@ -1,0 +1,75 @@
+<html>
+<head>
+<link rel="stylesheet" href="home.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+<style>
+body {
+  background-image: url('aus3.jpg');
+  background-repeat: no-repeat;
+}
+
+</style>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="placestogo.html">Places to go</a>
+  <a href="intrests.html">Intrests</a>
+  <a href="tripplanning.html">Trip planning</a>
+  <a href="login.html">Login</a>
+  <a href="about.html">About</a>
+  
+</div>
+<br>
+<br>
+<div class="para">
+  <p>
+  In every corner of Australia you’ll find unique experiences and landscapes bursting with colour, culture and natural beauty. Take a moment to travel through the country’s most captivating scenes . Australia is a country that’s as diverse as it is beautiful, from the ochre-red outback around Uluru to the frosty summit of Cradle Mountain, and the white sand of the Whitsunday Islands to the pink lakes of Western Australia.Take time and visit places in Australia</p>
+  </div>
+  <div class="aus">
+  <h3>@AUSTRALIA</h3>
+  
+
+<div class="w3-content w3-display-container">
+
+	
+  
+  <img class="mySlides" src="home_image2.jpg" style="width:100%">
+  <img class="mySlides" src="home_image3.jpg" style="width:100%">
+  <img class="mySlides" src="home_image4.jpg" style="width:100%">
+  <img class="mySlides" src="home_image5.jpg" style="width:100%">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+ 
+  </div>
+</head>
+<body>
+</body>
+</html>
